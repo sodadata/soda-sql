@@ -36,15 +36,17 @@ class AthenaFixture(WarehouseFixture):
     def create_database(self):
         self.database = self.create_unique_database_name()
         self.warehouse.dialect.database = self.database
+        quoted_database_name = self.dialect.quote_identifier_declaration(self.database)
         sql_updates(self.warehouse.connection, [
-            f'CREATE DATABASE IF NOT EXISTS {self.database}'])
+            f'CREATE DATABASE IF NOT EXISTS {quoted_database_name}'])
 
     def sql_create_table(self, columns: List[str], table_name: str):
         columns_sql = ", ".join(columns)
         table_postfix = (''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(5)))
         table_location = path.join(self.warehouse.dialect.athena_staging_dir, self.suite_id, table_name, table_postfix)
+        quoted_table_name = self.warehouse.dialect.quote_identifier_declaration(table_name)
         return f"CREATE EXTERNAL TABLE " \
-               f"{self.warehouse.dialect.qualify_writable_table_name(table_name)} ( \n " \
+               f"{quoted_table_name} ( \n " \
                f"{columns_sql} ) \n " \
                f"LOCATION '{table_location}';"
 

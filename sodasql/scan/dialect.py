@@ -39,6 +39,7 @@ ALL_WAREHOUSE_TYPES = [POSTGRES,
 
 class Dialect:
 
+    # TODO move these to test warehouse fixture
     data_type_varchar_255 = "VARCHAR(255)"
     data_type_integer = "INTEGER"
     data_type_bigint = "BIGINT"
@@ -108,6 +109,27 @@ class Dialect:
     def is_time(self, column_type: str):
         raise RuntimeError('TODO override this method')
 
+    def sql_create_database(self, quoted_database_name: str) -> str:
+        return f'CREATE DATABASE IF NOT EXISTS {quoted_database_name}'
+
+    def sql_create_table(
+            self,
+            table_name: str,
+            column_declarations: List[str]):
+        columns_sql = ",\n  ".join(column_declarations)
+        return f"CREATE TABLE " \
+               f"{self.quote_identifier_declaration(table_name)} ( \n" \
+               f"  {columns_sql} )"
+
+    def sql_insert_into(self, table_name, rows: list):
+        rows_sql = ',\n  '.join(rows)
+        return (f'INSERT INTO '
+                f"{self.quote_identifier_declaration(table_name)} VALUES \n"
+                f"  {rows_sql}")
+
+    def sql_drop_table(self, table_name):
+        return f"DROP TABLE IF EXISTS {self.quote_identifier(table_name)}"
+
     def create_scan(self, *args, **kwargs):
         # Purpose of this method is to enable dialects to override and
         # customize the scan implementation
@@ -118,24 +140,6 @@ class Dialect:
         return (self.is_text(column_type)
                 or self.is_number(column_type)
                 or self.is_time(column_type))
-
-    def sql_create_table(
-            self,
-            table_name: str,
-            column_declarations: List[str]):
-        columns_sql = ",\n  ".join(column_declarations)
-        return f"CREATE TABLE " \
-               f"{self.qualify_writable_table_name(table_name)} ( \n" \
-               f"  {columns_sql} )"
-
-    def sql_insert_into(self, table_name, rows: list):
-        rows_sql = ',\n  '.join(rows)
-        return (f'INSERT INTO '
-                f"{self.qualify_writable_table_name(table_name)} VALUES \n"
-                f"  {rows_sql}")
-
-    def sql_drop_table(self, table_name):
-        return f"DROP TABLE IF EXISTS {self.qualify_writable_table_name(table_name)}"
 
     def sql_expr_count_all(self) -> str:
         return 'COUNT(*)'
@@ -218,7 +222,9 @@ class Dialect:
         return f"DATE '{date_string}'"
 
     def literal(self, o: object):
-        if isinstance(o, Number):
+        if o is None:
+            return 'NULL'
+        elif isinstance(o, Number):
             return self.literal_number(o)
         elif isinstance(o, str):
             return self.literal_string(o)
@@ -235,6 +241,12 @@ class Dialect:
 
     def qualify_writable_table_name(self, table_name: str) -> str:
         return table_name
+
+    def quote_identifier(self, name: str) -> str:
+        return f'"{name}"'
+
+    def quote_identifier_declaration(self, name: str) -> str:
+        return f'"{name}"'
 
     def qualify_regex(self, regex):
         return regex
@@ -390,3 +402,4 @@ class Dialect:
 
     def sql_columns_metadata(self, table_name: str) -> List[tuple]:
         return []
+

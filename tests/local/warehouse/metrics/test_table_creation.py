@@ -8,23 +8,24 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-import sys
-import traceback
 
-from click.testing import CliRunner
+from tests.common.sql_test_case import SqlTestCase
+from tests.common.table_creator import DataType
 
-from sodasql.cli.cli import main
 
-if __name__ == "__main__":
+class TestTableCreation(SqlTestCase):
 
-    run_result = None
-    try:
-        runner = CliRunner()
-        runner.file = sys.stdout
-        run_result = runner.invoke(main, ['analyze', '~/Demo/bqft/warehouse.yml'])
-    except Exception as e:
-        traceback.print_exc()
-    if run_result:
-        print(f'\nConsole:')
-        print(run_result.output)
-    print(f'\nExit code {run_result.exit_code}')
+    def test_table_creation(self):
+        table_creator = self.new_table_creator('test_table')
+
+        table_creator.column('name', DataType.VARCHAR).insert(
+            'one',
+            'two',
+            None)
+
+        table_creator.column('size', DataType.INTEGER).insert(
+            1,
+            2,
+            None)
+
+        table_creator.recreate()
