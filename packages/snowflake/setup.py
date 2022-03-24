@@ -14,8 +14,7 @@ description = "Soda SQL Snowflake"
 
 requires = [
     f'soda-sql-core=={package_version}',
-    'snowflake-connector-python==2.4.0',
-    "cryptography==3.3.2"
+    'snowflake-connector-python~=2.7',
 ]
 # TODO Fix the params
 setup(
