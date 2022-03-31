@@ -779,7 +779,9 @@ class Scan:
                         }
                     metric['columnName'] = scan_column.column_name
                     metrics.append(metric)
-                results = self.soda_server_client.historic_metrics(self.warehouse, self.scan_yml.table_name, metrics)
+                variables = self.variables.copy() if self.variables else {}
+                dataset_name = Template(self.scan_yml.dataset_name or self.scan_yml.table_name).render(variables)
+                results = self.soda_server_client.historic_metrics(self.warehouse, dataset_name, metrics)
                 measurements = results['measurements']
                 errors = []
                 for name, val in measurements.items():
@@ -904,13 +906,15 @@ class Scan:
     def _ensure_scan_reference(self):
         if self.soda_server_client and not self.scan_reference:
             database_and_schema = self.warehouse.dialect.get_warehouse_name_and_schema()
+            variables = self.variables.copy() if self.variables else {}
+            dataset_name = Template(self.scan_yml.dataset_name or self.scan_yml.table_name).render(variables)
             try:
                 self.start_scan_response = self.soda_server_client.scan_start(
                     self.warehouse.name,
                     self.warehouse.dialect.type,
                     database_and_schema.get("database_name"),
                     database_and_schema.get("database_schema"),
-                    self.scan_yml.table_name,
+                    dataset_name,
                     self.scan_yml.columns,
                     self.time,
                     origin=os.environ.get('SODA_SCAN_ORIGIN', 'external'))

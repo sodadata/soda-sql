@@ -22,6 +22,7 @@ from sodasql.scan.test import Test
 
 class ScanYml:
     table_name: str = None
+    dataset_name: Optional[str] = None
     metrics: Set[str] = None
     sql_metric_ymls: List[SqlMetricYml] = None
     tests: List[Test] = None
