@@ -8,7 +8,7 @@ if sys.version_info < (3, 7):
     sys.exit(1)
 
 package_name = "soda-sql-athena"
-package_version = '2.1.8'
+package_version = '2.1.9'
 # TODO Add proper description
 description = "Soda SQL Amazon Athena"
 
