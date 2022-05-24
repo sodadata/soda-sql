@@ -251,7 +251,7 @@ class Scan:
                 if scan_column.is_missing_enabled:
                     metric_indices['non_missing'] = len(measurements)
                     if scan_column.non_missing_condition:
-                        fields.append(dialect.sql_expr_count_conditional(scan_column.non_missing_condition, column_name, ))
+                        fields.append(dialect.sql_expr_count_conditional(scan_column.non_missing_condition, column_name))
                     else:
                         fields.append(dialect.sql_expr_count(scan_column.qualified_column_name))
                     measurements.append(Measurement(Metric.VALUES_COUNT, column_name))
