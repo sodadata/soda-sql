@@ -26,6 +26,7 @@ requires = [
     "requests>=2.23.0, <3.0",
     "Deprecated>=1.2.13, <1.3",
     "opentelemetry-exporter-otlp-proto-http>=1.6.2,<1.7",
+    "protobuf~=3.19.0"
 ]
 # TODO Fix the params
 # TODO Add a warning that installing core doesn't give any warehouse functionality
