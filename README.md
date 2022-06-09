@@ -12,8 +12,20 @@
  <br />
  <br />
 
-<p>&#10004;  <a href="https://docs.soda.io/soda-sql/installation.html">Install</a> from the command-line<br /></p>
-<p>&#10004;  Access comprehensive <a href="https://docs.soda.io/soda-sql/overview.html">documentation</a><br /></p>
+<style>
+h6 {
+  background-color: #ffff91;
+}
+</style>
+</head>
+<body>
+
+<p><h6>Soda SQL will soon be deprecated in favor of the Soda Core and the Soda Checks Language. If you are new to Soda, start with <a href="https://github.com/sodadata/soda-core">Soda Core</a>!</h6></p>
+
+
+
+<p>&#10004;  <a href="https://docs.soda.io/soda-sql/installation.html">Install Soda SQL</a> from the command-line<br /></p>
+<p>&#10004;  Access comprehensive Soda SQL <a href="https://docs.soda.io/soda-sql/overview.html">documentation</a><br /></p>
 <p>&#10004;  Compatible with Snowflake, Amazon Redshift, BigQuery, <a href="https://docs.soda.io/soda-sql/installation.html#compatibility">and more</a><br /></p>
 <p>&#10004;  <a href="https://docs.soda.io/soda-sql/tests.html">Write tests</a> in a YAML file<br /></p>
 <p>&#10004;  <a href="https://docs.soda.io/soda-sql/programmatic_scan.html">Run programmatic scans</a> to test data quality<br /></p>
@@ -66,7 +78,7 @@ sql_metric:
 
 ## Install
 * <a href="https://docs.soda.io/soda-sql/installation.html">Install Soda SQL</a>
-* <a href="https://docs.soda.io/soda-sql/5_min_tutorial.html">Quick start for Soda SQL</a>
+* <a href="https://docs.soda.io/soda/quick-start-soda-sql.html">Quick start for Soda SQL</a>
 
 ## Collaborate
 * <a href="https://community.soda.io/slack" target="_blank">Join us on Slack</a>
@@ -122,7 +134,8 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## Open Telemetry Tracking
 
-Soda-sql collects statistical usage and performance information via the [Open Telemetry framework](https://opentelemetry.io) to help the Soda Core developers team proactively track performance issues and understand how users interact with the tool.
-The information is strictly limited to usage and performance and does not contain Personal Identifying Information. It will be used for internal purposes only. Soda will keep the data in its raw form for a maximum of 5 years. If some information needs to be kept for longer, it will be done in aggregated form only.
+Soda SQL collects statistical usage and performance information via the [Open Telemetry framework](https://opentelemetry.io). This information helps the Soda Core developer team proactively track performance issues and understand how users interact with the tool.
 
-Users can find more information about the tracked information, and opt-out of tracking by consulting the [reference section of docs.soda.io](https://docs.soda.io/soda-sql/global-configuration.html)
+The collected information is strictly limited to usage and performance and does not contain Personal Identifying Information (PII). It is used for internal purposes only. Soda keeps the data in its raw form for a maximum of five years. If some information needs to be kept for longer, it will only be kept in aggregated form.
+
+Read more about the information Soda tracks, and learn how to opt-out of tracking by consulting the [Anonymous usage statistics](https://docs.soda.io/soda-sql/global-configuration.html) on docs.soda.io.
