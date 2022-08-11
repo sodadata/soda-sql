@@ -60,3 +60,7 @@ search = "package_version = '{current_version}'"
 [[file]]
 src = "packages/trino/setup.py"
 search = "package_version = '{current_version}'"
+
+[[file]]
+src = "packages/denodo/setup.py"
+search = "package_version = '{current_version}'"

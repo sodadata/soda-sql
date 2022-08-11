@@ -42,6 +42,7 @@ TARGET_HIVE = 'hive'
 TARGET_MYSQL = 'mysql'
 TARGET_SPARK = 'spark'
 TARGET_TRINO = 'trino'
+TARGET_DENODO = 'denodo'
 
 
 def equals_ignore_case(left, right):

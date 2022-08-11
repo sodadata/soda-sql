@@ -30,6 +30,7 @@ KEY_ACCOUNT_INFO_JSON_PATH = 'account_info_json_path'
 
 ATHENA = 'athena'
 BIGQUERY = 'bigquery'
+DENODO = 'denodo'
 HIVE = 'hive'
 POSTGRES = 'postgres'
 MYSQL = 'mysql'
@@ -41,6 +42,7 @@ TRINO = 'trino'
 
 ALL_WAREHOUSE_TYPES = [ATHENA,
                        BIGQUERY,
+                       DENODO,
                        HIVE,
                        POSTGRES,
                        MYSQL,
@@ -90,6 +92,8 @@ class Dialect(metaclass=abc.ABCMeta):
                 _warehouse_class = Dialect._import_class('sodasql.dialects.athena_dialect', 'AthenaDialect')
             elif warehouse_type == BIGQUERY:
                 _warehouse_class = Dialect._import_class('sodasql.dialects.bigquery_dialect', 'BigQueryDialect')
+            elif warehouse_type == DENODO:
+                _warehouse_class = Dialect._import_class('sodasql.dialects.denodo_dialect', 'DenodoDialect')
             elif warehouse_type == HIVE:
                 _warehouse_class = Dialect._import_class('sodasql.dialects.hive_dialect', 'HiveDialect')
             elif warehouse_type == POSTGRES:
