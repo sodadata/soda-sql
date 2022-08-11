@@ -1,0 +1,7 @@
+type: denodo
+host: localhost
+username: admin
+database: admin
+password: admin
+port: 9996
+

@@ -42,6 +42,7 @@ TARGET_HIVE = 'hive'
 TARGET_MYSQL = 'mysql'
 TARGET_SPARK = 'spark'
 TARGET_TRINO = 'trino'
+TARGET_DENODO = 'denodo'
 
 
 def equals_ignore_case(left, right):
@@ -82,7 +83,7 @@ class SqlTestCase(TestCase):
     def setup_get_warehouse_fixture(self):
         """self.target may be initialized by a test suite"""
         if self.target is None:
-            self.target = os.getenv('SODA_TEST_TARGET', TARGET_POSTGRES)
+            self.target = os.getenv('SODA_TEST_TARGET', TARGET_DENODO)
 
         warehouse_fixture = SqlTestCase.warehouse_fixtures_by_target.get(self.target)
         if warehouse_fixture is None:

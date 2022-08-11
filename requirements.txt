@@ -1,6 +1,7 @@
 ./core
 ./packages/athena
 ./packages/dbt
+./packages/denodo
 ./packages/bigquery
 ./packages/hive
 ./packages/postgresql
