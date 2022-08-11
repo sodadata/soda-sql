@@ -25,7 +25,8 @@ requires = [
     "pyyaml>=5.4.1, <6.0",
     "requests>=2.23.0, <3.0",
     "Deprecated>=1.2.13, <1.3",
-    "opentelemetry-exporter-otlp-proto-http>=1.6.2,<1.7",
+    "opentelemetry-api~=1.11.0",
+    "opentelemetry-exporter-otlp-proto-http~=1.11.0",
     "protobuf~=3.19.0"
 ]
 # TODO Fix the params
