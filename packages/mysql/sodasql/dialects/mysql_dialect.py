@@ -861,12 +861,12 @@ class MySQLDialect(Dialect):
         ]
 
     def qualify_table_name(self, table_name: str) -> str:
-        if table_name in self.reserved_keywords:
+        if table_name.upper() in self.reserved_keywords:
             return f'`{table_name}`'
         return table_name
 
     def qualify_column_name(self, column_name: str, source_type: str = None):
-        if column_name in self.reserved_keywords:
+        if column_name.upper() in self.reserved_keywords:
             return f'`{column_name}`'
         return column_name
 
@@ -877,6 +877,8 @@ class MySQLDialect(Dialect):
         return self.escape_metacharacters(regex)
 
     def sql_expr_regexp_like(self, expr: str, pattern: str):
+        if expr.upper() in self.reserved_keywords:
+            expr = f"`{expr}`"
         return f"{expr} regexp '{self.qualify_regex(pattern)}'"
 
     def sql_expr_cast_text_to_number(self, quoted_column_name, validity_format):
