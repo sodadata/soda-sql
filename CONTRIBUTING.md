@@ -36,7 +36,7 @@ launch a correct PostgreSQL db with the right user and database.
 
 ## Push a release
 
-Make sure that you you install dev-requirements
+Make sure that you install dev-requirements
 ```shell
 pip-compile dev-requirements.in
 pip install -r dev-requirements.txt

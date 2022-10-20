@@ -22,7 +22,7 @@ requires = [
     "markupsafe==2.0.1",
     "Jinja2>=2.11.3, <4.0",
     "click>=8.0, <9.0",
-    "pyyaml>=5.4.1, <6.0",
+    "pyyaml>=5.4.1",
     "requests>=2.23.0, <3.0",
     "Deprecated>=1.2.13, <1.3",
     "opentelemetry-api~=1.11.0",
