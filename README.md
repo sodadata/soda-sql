@@ -1,3 +1,9 @@
+
+> __Warning__
+> Soda SQL is deprecated in favor of the Soda Core and the Soda Checks Language. If you are new to Soda, start with <a href="https://github.com/sodadata/soda-core">Soda Core</a>!
+
+
+
 <p align="center"><img src="https://github.com/sodadata/docs/blob/main/assets/images/soda-sql-logo.png" alt="Soda logo" width="300" /></p>
 
 <p align="center"><b>Data testing, monitoring, and profiling for SQL-accessible data.</b></p>
@@ -11,16 +17,10 @@
 </p>
  <br />
  <br />
-
-<style>
-h6 {
-  background-color: #ffff91;
-}
-</style>
 </head>
 <body>
 
-<p><h6>Soda SQL will soon be deprecated in favor of the Soda Core and the Soda Checks Language. If you are new to Soda, start with <a href="https://github.com/sodadata/soda-core">Soda Core</a>!</h6></p>
+
 
 
 
