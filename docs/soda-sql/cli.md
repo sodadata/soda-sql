@@ -1,12 +1,3 @@
----
-layout: default
-title: Soda SQL CLI commands
-description: Access a table of Soda SQL command-line interface commands. Use soda --help to review commands and options in your command-line interface.
-sidebar: sql
-parent: Soda SQL
-redirect_from: /soda-sql/documentation/cli.html
----
-
 # Soda SQL CLI commands
 
 
