@@ -10,7 +10,7 @@ After you [install Soda SQL](/docs/soda-sql/installation.md), you must create fi
 3. Get Soda SQL to discover all the datasets in your data source and create a scan YAML file for each dataset. The scan YAML files store the test criteria that Soda SQL uses to prepare SQL queries that scan your data source.
 4. Adjust the contents of your new scan YAML files to add the tests you want to run on your data to check for quality.
 
-Consider following the [Quick start tutorial](/docs/soda-sql-quick-start-soda-sql.md) that guides you through configuration and scanning.
+Consider following the [Quick start tutorial](/docs/soda-sql/quick-start-soda-sql.md) that guides you through configuration and scanning.
 
 ## Configuration instructions
 
