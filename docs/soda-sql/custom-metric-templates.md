@@ -58,34 +58,34 @@ If you want to compare row counts between two datasets and allow for some accept
 ✅ Snowflake
 
 ```yaml
-    sql_metrics:
-        - sql: |
-            with table1 as (
-              select count(*) as table_1_rows from {{ table_1 }}
-            ), 
-            table2 as (
-              select count(*) as table_2_rows from {{ table_2 }}
-            ),
-            intermediate as (
-              select 
-                (select table_1_rows from table1) as table_1_rows,
-                (select table_2_rows from table2) as table_2_rows
-            ),
-            difference_calculation as (
-              select 
-                case 
-                  when table_1_rows >= table_2_rows
-                    then table_1_rows - table_2_rows
-                  when table_1_rows < table_2_rows
-                    then table_2_rows - table_1_rows
-                  end
-                as row_delta
-              from intermediate
-            )
-            select 
-              row_delta
-            from difference_calculation
-            where row_delta > {{ acceptance_threshold }}
+sql_metrics:
+    - sql: |
+        with table1 as (
+          select count(*) as table_1_rows from {{ table_1 }}
+        ), 
+        table2 as (
+          select count(*) as table_2_rows from {{ table_2 }}
+        ),
+        intermediate as (
+          select 
+            (select table_1_rows from table1) as table_1_rows,
+            (select table_2_rows from table2) as table_2_rows
+        ),
+        difference_calculation as (
+          select 
+            case 
+              when table_1_rows >= table_2_rows
+                then table_1_rows - table_2_rows
+              when table_1_rows < table_2_rows
+                then table_2_rows - table_1_rows
+              end
+            as row_delta
+          from intermediate
+        )
+        select 
+          row_delta
+        from difference_calculation
+        where row_delta > {{ acceptance_threshold }}
 ```
 
 
