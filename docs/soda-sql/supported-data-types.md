@@ -4,16 +4,16 @@ Soda SQL supports the following data types in columns it scans.
 Currently, Soda does *not* support complex data types.
 
 
-[Amazon Athena](#amazon-athena) 
-[Amazon Redshift](#amazon-redshift) 
-[Apache Hive (Experimental)](#apache-hive-experimental) 
-[Apache Spark](#apache-spark) 
-[Google Cloud Platform Big Query](#google-cloud-platform-big-query) 
-[Microsoft SQL Server (Experimental)](#microsoft-sql-server-experimental) 
-[MySQL (Experimental)](#mysql-experimental) 
-[Postgres](#postgres) 
-[Snowflake](#snowflake) 
-[Trino (Experimental)](#trino-experimental)
+[Amazon Athena](#amazon-athena) <br />
+[Amazon Redshift](#amazon-redshift) <br />
+[Apache Hive (Experimental)](#apache-hive-experimental) <br />
+[Apache Spark](#apache-spark) <br />
+[Google Cloud Platform Big Query](#google-cloud-platform-big-query) <br />
+[Microsoft SQL Server (Experimental)](#microsoft-sql-server-experimental) <br />
+[MySQL (Experimental)](#mysql-experimental) <br />
+[Postgres](#postgres) <br />
+[Snowflake](#snowflake) <br />
+[Trino (Experimental)](#trino-experimental)<br />
 <br />
 
 ### Amazon Athena

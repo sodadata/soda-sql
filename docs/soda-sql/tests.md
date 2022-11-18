@@ -8,11 +8,11 @@ The **scan results** appear in your command-line interface (CLI). The results in
 
 **Soda Cloud** defines tests inside **monitors**. 
 
-[Define tests using metrics](#define-tests-using-metrics)
-[Example tests using built-in metrics](#example-tests-using-built-in-metrics)
-[Example tests using custom metrics](#example-tests-using-custom-metrics)
-[Define names for tests](#define-names-for-tests)
-[Best practices for defining tests and running scans](#best-practices-for-defining-tests-and-running-scans)
+[Define tests using metrics](#define-tests-using-metrics)<br />
+[Example tests using built-in metrics](#example-tests-using-built-in-metrics)<br />
+[Example tests using custom metrics](#example-tests-using-custom-metrics)<br />
+[Define names for tests](#define-names-for-tests)<br />
+[Best practices for defining tests and running scans](#best-practices-for-defining-tests-and-running-scans)<br />
 <br />
 
 ## Define tests using metrics

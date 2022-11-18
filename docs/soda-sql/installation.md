@@ -2,11 +2,11 @@
 
 Soda SQL is a command-line interface (CLI) tool that enables you to scan the data in your data source to surface invalid, missing, or unexpected data.
 
-[Compatibility](#compatibility)
-[Requirements](#requirements)
-[Install](#install)
-[Upgrade](#upgrade)
-[Troubleshoot](#troubleshoot)
+[Compatibility](#compatibility)<br />
+[Requirements](#requirements)<br />
+[Install](#install)<br />
+[Upgrade](#upgrade)<br />
+[Troubleshoot](#troubleshoot)<br />
 
 
 ## Compatibility

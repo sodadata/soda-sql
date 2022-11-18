@@ -4,18 +4,18 @@ A **metric** is a property of the data in your database. A **measurement** is th
 
 Read more about [Metrics](/docs/soda-sql/metrics.md) in general as they apply to both Soda SQL and Soda Cloud. 
 
-[Dataset metrics](#dataset-metrics)
-[Column metrics](#column-metrics)
-[Using regex with column metrics](#using-regex-with-column-metrics)
-[Column configuration keys](#column-configuration-keys) 
-[Valid format values](#valid-format-values) 
-[Historic metrics](#historic-metrics)
-[Metric groups and dependencies](#metric-groups-and-dependencies)
-[Custom metrics](#custom-metrics)
-[Custom metric names](#custom-metric-names)
-[GROUP BY queries in custom metrics](#group-by-queries-in-custom-metrics)
-[Variables in custom metrics](#variables-in-custom-metrics)
-[Custom metrics using file reference](#custom-metrics-using-file-reference)
+[Dataset metrics](#dataset-metrics)<br />
+[Column metrics](#column-metrics)<br />
+[Using regex with column metrics](#using-regex-with-column-metrics)<br />
+[Column configuration keys](#column-configuration-keys) <br />
+[Valid format values](#valid-format-values) <br />
+[Historic metrics](#historic-metrics)<br />
+[Metric groups and dependencies](#metric-groups-and-dependencies)<br />
+[Custom metrics](#custom-metrics)<br />
+[Custom metric names](#custom-metric-names)<br />
+[GROUP BY queries in custom metrics](#group-by-queries-in-custom-metrics)<br />
+[Variables in custom metrics](#variables-in-custom-metrics)<br />
+[Custom metrics using file reference](#custom-metrics-using-file-reference)<br />
 <br />
 
 ## Dataset metrics
@@ -24,10 +24,10 @@ Use **dataset metrics** to define tests in your scan YAML file that execute agai
 
 ![table-metrics](/docs/assets/images/table-metrics.png)
 
-| Dataset metric <br />in Soda SQL | Description      |
-| ---------- | ---------------- | -------------|
-| `row_count` | The number of rows in a dataset. |
-| `schema` | A list of column names in a dataset, and their data types. |
+| Dataset metric in Soda SQL | Description      |
+| -------------------------- | ---------------- | 
+| `row_count`                | The number of rows in a dataset. |
+| `schema`                   | A list of column names in a dataset, and their data types. |
 
 
 #### Example tests using a dataset metric

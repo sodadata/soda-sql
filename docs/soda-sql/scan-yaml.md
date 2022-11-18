@@ -5,10 +5,10 @@ A **scan** is a Soda SQL CLI command that uses SQL queries to extract informatio
 Instead of laboriously accessing your data source and then manually defining SQL queries to analyze the data in datasets, you can use a much simpler Soda SQL scan. First, you configure scan metrics and tests in a **scan YAML** file, then Soda SQL uses the input from that file to prepare, then run SQL queries against your data.
 <br />
 
-[Create a scan YAML file](#create-a-scan-yaml-file)
-[Anatomy of the scan YAML file](#anatomy-of-the-scan-yaml-file)
-[Scan YAML table configuration keys](#scan-yaml-table-configuration-keys)
-[Add a dataset name for Soda Cloud](#add-a-dataset-name-for-soda-cloud)
+[Create a scan YAML file](#create-a-scan-yaml-file)<br />
+[Anatomy of the scan YAML file](#anatomy-of-the-scan-yaml-file)<br />
+[Scan YAML table configuration keys](#scan-yaml-table-configuration-keys)<br />
+[Add a dataset name for Soda Cloud](#add-a-dataset-name-for-soda-cloud)<br />
 
 ## Create a scan YAML file
 

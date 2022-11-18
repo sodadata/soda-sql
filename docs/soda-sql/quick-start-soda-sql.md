@@ -8,12 +8,12 @@ Use your command-line interface to connect Soda SQL to a demo warehouse, create 
 ![soda-cloud-logo](/docs/assets/images/soda-cloud-logo.png)
 After you run your scan from the command-line, consider going further by signing up for a free trial account in Soda Cloud, the web application that offers data quality visualizations and much more. 
 
-[Tutorial prerequisites](#tutorial-prerequisites) 
-[Create a demo warehouse](#create-a-demo-warehouse)
-[Connect Soda SQL to the warehouse](#connect-soda-sql-to-the-warehouse)
-[Create and examine tests](#create-and-examine-tests)
-[Run a scan](#run-a-scan) 
-[Connect Soda SQL to Soda Cloud (Optional)](#connect-soda-sql-to-soda-cloud) 
+[Tutorial prerequisites](#tutorial-prerequisites) <br />
+[Create a demo warehouse](#create-a-demo-warehouse)<br />
+[Connect Soda SQL to the warehouse](#connect-soda-sql-to-the-warehouse)<br />
+[Create and examine tests](#create-and-examine-tests)<br />
+[Run a scan](#run-a-scan) <br />
+[Connect Soda SQL to Soda Cloud (Optional)](#connect-soda-sql-to-soda-cloud) <br />
 <br />
 
 

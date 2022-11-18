@@ -8,14 +8,13 @@ Read more about using [custom metrics in Soda SQL](/docs/soda-sql/sql_metrics.md
 
 The templates below offer examples of how you can define custom metrics in your [scan YAML](/docs/soda-sql/scan-yaml.md) file to extract more complex, customized, business-specific measurements from your data. Replace the values in the double curly braces `{{ }}`  with your own relevant values.
 
-[Compare row count between datasets](#compare-row-count-between-datasets)
-[Find and display duplicate values](#find-and-display-duplicate-values)
-[Confirm the referential integrity of IDs between datasets](#confirm-the-referential-integrity-of-ids-between-datasets)
-[Compare values between datasets](#compare-values-between-datasets)
-[Compare datasets for equality](#compare-datasets-for-equality)
-[Validate business logic at the row level](#validate-business-logic-at-the-row-level)
-[Check for incorrectly mapped values across columns](#check-for-incorrectly-mapped-values-across-columns)
-
+[Compare row count between datasets](#compare-row-count-between-datasets)<br />
+[Find and display duplicate values](#find-and-display-duplicate-values)<br />
+[Confirm the referential integrity of IDs between datasets](#confirm-the-referential-integrity-of-ids-between-datasets)<br />
+[Compare values between datasets](#compare-values-between-datasets)<br />
+[Compare datasets for equality](#compare-datasets-for-equality)<br />
+[Validate business logic at the row level](#validate-business-logic-at-the-row-level)<br />
+[Check for incorrectly mapped values across columns](#check-for-incorrectly-mapped-values-across-columns)<br />
 <br />
 
 ## Compare row count between datasets

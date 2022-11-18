@@ -4,12 +4,12 @@ A **scan** is a command that executes tests to extract information about data in
 
 Soda SQL uses the input in the scan YAML file and Soda Cloud monitors to prepare SQL queries that it runs against the data in a dataset. All tests return true or false; if true, the test passed and you know your data is sound; if false, the test fails which means the scan discovered data that falls outside the expected or acceptable parameters you defined in your test.
 
-[Run a scan in Soda SQL](#run-a-scan-in-soda-sql)
-[Scan output in Soda SQL](#scan-output-in-soda-sql)
-[Programmatically use scan output](#programmatically-use-scan-output)
-[Add scan options](#add-scan-options)
-[Scan output in Soda Cloud](#scan-output-in-soda-cloud) 
-[Overwrite scan output in Soda Cloud](#overwrite-scan-output-in-soda-cloud)
+[Run a scan in Soda SQL](#run-a-scan-in-soda-sql)<br />
+[Scan output in Soda SQL](#scan-output-in-soda-sql)<br />
+[Programmatically use scan output](#programmatically-use-scan-output)<br />
+[Add scan options](#add-scan-options)<br />
+[Scan output in Soda Cloud](#scan-output-in-soda-cloud) <br />
+[Overwrite scan output in Soda Cloud](#overwrite-scan-output-in-soda-cloud)<br />
 <br />
 
 ## Run a scan in Soda SQL

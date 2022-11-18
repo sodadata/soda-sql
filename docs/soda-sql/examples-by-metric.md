@@ -3,33 +3,33 @@
 Refer to [Metrics](/docs/soda-sql/sql_metrics.md) for configuration details for Soda SQL.
 Refer to [Scan YAML](/docs/soda-sql/scan-yaml.md#anatomy-of-the-scan-yaml-file) for details on the anatomy of a scan YAML file.
 
-[avg](/docs/soda-sql/examples-by-metric.md#avg)
-[avg-length](/docs/soda-sql/examples-by-metric.md#avg-length)
-[distinct](/docs/soda-sql/examples-by-metric.md#distinct)
-[duplicate_count](/docs/soda-sql/examples-by-metric.md#duplicate_count)
-[frequent_values](/docs/soda-sql/examples-by-metric.md#frequent_values)
-[histogram](/docs/soda-sql/examples-by-metric.md#histogram)
-[invalid_count](/docs/soda-sql/examples-by-metric.md#invalid_count)
-[invalid_percentage](/docs/soda-sql/examples-by-metric.md#invalid_percentage)
-[max](/docs/soda-sql/examples-by-metric.md#max)
-[max_length](/docs/soda-sql/examples-by-metric.md#max_length)
-[maxs](/docs/soda-sql/examples-by-metric.md#maxs)
-[min](/docs/soda-sql/examples-by-metric.md#min)
-[min_length](/docs/soda-sql/examples-by-metric.md#min_length)
-[mins](/docs/soda-sql/examples-by-metric.md#mins)
-[missing_count](/docs/soda-sql/examples-by-metric.md#missing_count)
-[missing_percentage](/docs/soda-sql/examples-by-metric.md#missing_percentage)
-[row_count](/docs/soda-sql/examples-by-metric.md#row_count)
-[schema](/docs/soda-sql/examples-by-metric.md#schema)
-[stddev](/docs/soda-sql/examples-by-metric.md#stddev)
-[sum](/docs/soda-sql/examples-by-metric.md#sum)
-[unique_count](/docs/soda-sql/examples-by-metric.md#unique_count)
-[uniqueness](/docs/soda-sql/examples-by-metric.md#uniqueness)
-[valid_count](/docs/soda-sql/examples-by-metric.md#valid_count)
-[valid_percentage](/docs/soda-sql/examples-by-metric.md#valid_percentage)
-[values_count](/docs/soda-sql/examples-by-metric.md#values_count)
-[values_percentage](/docs/soda-sql/examples-by-metric.md#values_percentage)
-[variance](/docs/soda-sql/examples-by-metric.md#variance)
+[avg](/docs/soda-sql/examples-by-metric.md#avg)<br />
+[avg-length](/docs/soda-sql/examples-by-metric.md#avg-length)<br />
+[distinct](/docs/soda-sql/examples-by-metric.md#distinct)<br />
+[duplicate_count](/docs/soda-sql/examples-by-metric.md#duplicate_count)<br />
+[frequent_values](/docs/soda-sql/examples-by-metric.md#frequent_values)<br />
+[histogram](/docs/soda-sql/examples-by-metric.md#histogram)<br />
+[invalid_count](/docs/soda-sql/examples-by-metric.md#invalid_count)<br />
+[invalid_percentage](/docs/soda-sql/examples-by-metric.md#invalid_percentage)<br />
+[max](/docs/soda-sql/examples-by-metric.md#max)<br />
+[max_length](/docs/soda-sql/examples-by-metric.md#max_length)<br />
+[maxs](/docs/soda-sql/examples-by-metric.md#maxs)<br />
+[min](/docs/soda-sql/examples-by-metric.md#min)<br />
+[min_length](/docs/soda-sql/examples-by-metric.md#min_length)<br />
+[mins](/docs/soda-sql/examples-by-metric.md#mins)<br />
+[missing_count](/docs/soda-sql/examples-by-metric.md#missing_count)<br />
+[missing_percentage](/docs/soda-sql/examples-by-metric.md#missing_percentage)<br />
+[row_count](/docs/soda-sql/examples-by-metric.md#row_count)<br />
+[schema](/docs/soda-sql/examples-by-metric.md#schema)<br />
+[stddev](/docs/soda-sql/examples-by-metric.md#stddev)<br />
+[sum](/docs/soda-sql/examples-by-metric.md#sum)<br />
+[unique_count](/docs/soda-sql/examples-by-metric.md#unique_count)<br />
+[uniqueness](/docs/soda-sql/examples-by-metric.md#uniqueness)<br />
+[valid_count](/docs/soda-sql/examples-by-metric.md#valid_count)<br />
+[valid_percentage](/docs/soda-sql/examples-by-metric.md#valid_percentage)<br />
+[values_count](/docs/soda-sql/examples-by-metric.md#values_count)<br />
+[values_percentage](/docs/soda-sql/examples-by-metric.md#values_percentage)<br />
+[variance](/docs/soda-sql/examples-by-metric.md#variance)<br />
 
 ----
 
