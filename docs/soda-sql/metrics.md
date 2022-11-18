@@ -18,9 +18,9 @@ There are four kinds of metrics Soda uses:
 
 Use **dataset metrics** in tests that execute against all data in the dataset during a scan. 
 
-| Dataset metric <br />in Soda SQL |Dataset metric <br />in Soda Cloud | Description      |
+| Dataset metric in Soda SQL | Dataset metric in Soda Cloud | Description |
 | ---------- | ---------------- | -------------|
-| `row_count` | Row Count  |The number of rows in a dataset. |
+| `row_count` | Row Count  | The number of rows in a dataset. |
 | `schema` | n/a | A list of column names in a dataset, and their data types. |
 
 ## Column metrics

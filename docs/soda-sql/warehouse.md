@@ -2,9 +2,9 @@
 
 A **warehouse** is a type of data source that represents a SQL engine or database such as Snowflake, Amazon Redshift, or PostgreSQL. You use a **warehouse YAML** file to configure connection details for Soda SQL to access your data source.
 
-[Create a warehouse YAML file](#create-a-warehouse-yaml-file)
-[Anatomy of the warehouse YAML file](#anatomy-of-the-warehouse-yaml-file)
-[Env_vars YAML file](#env_vars-yaml-file)
+[Create a warehouse YAML file](#create-a-warehouse-yaml-file)<br />
+[Anatomy of the warehouse YAML file](#anatomy-of-the-warehouse-yaml-file)<br />
+[Env_vars YAML file](#env_vars-yaml-file)<br />
 [Provide credentials as system variables](#provide-credentials-as-system-variables)<br />
 
 

@@ -4,16 +4,16 @@ Soda SQL needs connection details in order to access your data source to scan yo
 
 You can connect Soda Core to your Soda Cloud account. To communicate with your data source, Soda Cloud uses a Network Address Translation (NAT) gateway with the IP address 54.78.91.111. You may wish to add this IP address to your data source's passlist.
 
-[Amazon Athena](#amazon-athena) 
-[Amazon Redshift](#amazon-redshift) 
-[Apache Hive (Experimental)](#apache-hive-experimental) 
-[Apache Spark](#apache-spark) 
+[Amazon Athena](#amazon-athena) <br />
+[Amazon Redshift](#amazon-redshift) <br />
+[Apache Hive (Experimental)](#apache-hive-experimental) <br />
+[Apache Spark](#apache-spark) <br />
 [Google Cloud Platform Big Query](#gcp-big-query) 
-[Microsoft SQL Server (Experimental)](#microsoft-sql-server-experimental) 
-[MySQL (Experimental)](#mysql-experimental) 
-[PostgreSQL](#postgresql) 
-[Snowflake](#snowflake) 
-[Trino (Experimental)](#trino-experimental) 
+[Microsoft SQL Server (Experimental)](#microsoft-sql-server-experimental) <br />
+[MySQL (Experimental)](#mysql-experimental) <br />
+[PostgreSQL](#postgresql) <br />
+[Snowflake](#snowflake) <br />
+[Trino (Experimental)](#trino-experimental) <br />
 [Troubleshoot data source connections](/docs/soda-sql/troubleshoot.md#data-source-connections)<br />
 
 
