@@ -1,6 +1,6 @@
 
-> __Warning__
-> Soda SQL is deprecated in favor of the Soda Core and the Soda Checks Language. If you are new to Soda, start with <a href="https://github.com/sodadata/soda-core">Soda Core</a>!
+# Soda SQL and Soda Spark have become Soda Core
+Soda SQL and Soda Spark are deprecated in favor of Soda Core and the Soda Checks Language. If you are new to Soda, start with <a href="https://github.com/sodadata/soda-core">Soda Core</a>!
 
 
 
@@ -24,17 +24,15 @@
 
 
 
-<p>&#10004;  <a href="https://docs.soda.io/soda-sql/installation.html">Install Soda SQL</a> from the command-line<br /></p>
-<p>&#10004;  Access comprehensive Soda SQL <a href="https://docs.soda.io/soda-sql/overview.html">documentation</a><br /></p>
-<p>&#10004;  Compatible with Snowflake, Amazon Redshift, BigQuery, <a href="https://docs.soda.io/soda-sql/installation.html#compatibility">and more</a><br /></p>
-<p>&#10004;  <a href="https://docs.soda.io/soda-sql/tests.html">Write tests</a> in a YAML file<br /></p>
-<p>&#10004;  <a href="https://docs.soda.io/soda-sql/programmatic_scan.html">Run programmatic scans</a> to test data quality<br /></p>
+&#10004;  [Install Soda SQL](/docs/soda-sql/installation.md) from the command-line<br />
+&#10004;  Access comprehensive [Soda SQL documentation](/docs/soda-sql/overview.md)<br />
+&#10004;  Compatible with [Snowflake, Amazon Redshift, BigQuery](/docs/soda-sql/installation.md#compatibility), and more</a><br />
+&#10004;  [Write tests](/docs/soda-sql/tests.md) in a YAML file<br />
+&#10004;  [Run programmatic scans](/docs/soda-sql/programmatic_scan.md) to test data quality<br />
 <br />
 
-**Got 5 minutes?** <a href="https://docs.soda.io/soda-sql/interactive-demo.html" target="_blank">Try the interactive demo!</a><br />
-<br />
 
-#### Example scan YAML file
+#### Example scan YAML file (Deprecated)
 ```yaml
 table_name: breakdowns
 metrics:
@@ -72,17 +70,11 @@ sql_metric:
     - row_count == other_row_count
 ```
 
-## Play
-* <a href="https://docs.soda.io/soda-sql/interactive-demo.html">Interactive Soda SQL demo</a>
-* <a href="https://github.com/sodadata/tutorial-demo-project" target="_blank">Soda SQL playground repo</a>
 
-## Install
-* <a href="https://docs.soda.io/soda-sql/installation.html">Install Soda SQL</a>
-* <a href="https://docs.soda.io/soda/quick-start-soda-sql.html">Quick start for Soda SQL</a>
+## Install (Deprecated)
+* [Install Soda SQL](/docs/soda-sql/installation.md)
+* [Quick start for Soda SQL](/docs/soda/quick-start-soda-sql.md)
 
-## Collaborate
-* <a href="https://community.soda.io/slack" target="_blank">Join us on Slack</a>
-* <a href="https://github.com/sodadata/soda-sql/blob/main/CONTRIBUTING.md" target="_blank">Help develop Soda SQL</a>
 
 
 ## Contributors ✨
@@ -130,12 +122,12 @@ Thanks goes to these wonderful people! ([emoji key](https://allcontributors.org/
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
+This project followed the [all-contributors](https://github.com/all-contributors/all-contributors) specification. 
 
-## Open Telemetry Tracking
+### Open Telemetry Tracking (Deprecated)
 
 Soda SQL collects statistical usage and performance information via the [Open Telemetry framework](https://opentelemetry.io). This information helps the Soda Core developer team proactively track performance issues and understand how users interact with the tool.
 
 The collected information is strictly limited to usage and performance and does not contain Personal Identifying Information (PII). It is used for internal purposes only. Soda keeps the data in its raw form for a maximum of five years. If some information needs to be kept for longer, it will only be kept in aggregated form.
 
-Read more about the information Soda tracks, and learn how to opt-out of tracking by consulting the [Anonymous usage statistics](https://docs.soda.io/soda-sql/global-configuration.html) on docs.soda.io.
+Read more about the information Soda tracks, and learn how to opt-out of tracking by consulting the [Anonymous usage statistics](/docs/soda-sql/global-configuration.md) documentation.
